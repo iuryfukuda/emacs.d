@@ -1,0 +1,4 @@
+*
+!.gitignore
+!init.d
+!init.el
