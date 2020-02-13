@@ -58,9 +58,9 @@
 	;; system changes
 	"keys"
 	"clipboard"
-	"theme"
 
 	;; use-package
+	"theme"
 	"go"
 	))
 
