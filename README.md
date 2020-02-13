@@ -1,6 +1,6 @@
 # Emacs.d
 
-Reposity for save the customization made for personal usage of emacs
+Emacs.d saves the customization of emacs
 
 ## Theme
 
