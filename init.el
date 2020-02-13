@@ -48,7 +48,7 @@
 (require 'use-package)
 
 ;; set use-package to always set :ensure flag in package
-(setq use-package-always-ensure t)
+;; (setq use-package-always-ensure t)
 
 ;;; Libraries
 
@@ -57,9 +57,15 @@
 
 ;; set libraries
 (setq libs
-      '("keys"
+      '(
+	;; system changes
+	"keys"
 	"clipboard"
-	"theme"))
+	"theme"
+
+	;; use-package
+	"go"
+	))
 
 ;; load all libraries
 (dolist (lib libs)
