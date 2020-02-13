@@ -6,7 +6,7 @@ Reposity for save the customization made for personal usage of emacs
 
 - [Dracula](https://draculatheme.com/emacs/)
 
-## Default Keys Changes
+## Changed Keys
 
 help
 ```
@@ -49,8 +49,8 @@ Used go-mode in .go files
 - [godef](github.com/rogpeppe/godef)
 - [godef](golang.org/x/tools/cmd/goimports)
 
-### Keys
+### Changed Keys
 ```
-M-. -> godef-jump
+M-.   -> godef-jump
 C-c d -> godoc-at-point
 ```
