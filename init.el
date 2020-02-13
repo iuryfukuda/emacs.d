@@ -47,9 +47,6 @@
 
 (require 'use-package)
 
-;; set use-package to always set :ensure flag in package
-;; (setq use-package-always-ensure t)
-
 ;;; Libraries
 
 ;; Load libraries configs
