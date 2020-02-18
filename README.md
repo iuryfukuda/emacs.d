@@ -49,7 +49,7 @@ Used go-mode in .go files
 - [godef](github.com/rogpeppe/godef)
 - [goimports](golang.org/x/tools/cmd/goimports)
 
-### Changed Keys
+#### Changed Keys
 ```
 M-.   -> godef-jump
 C-c d -> godoc-at-point
