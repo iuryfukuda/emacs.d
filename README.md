@@ -47,7 +47,7 @@ Used go-mode in .go files
 #### Requirements
 
 - [godef](github.com/rogpeppe/godef)
-- [godef](golang.org/x/tools/cmd/goimports)
+- [goimports](golang.org/x/tools/cmd/goimports)
 
 ### Changed Keys
 ```
