@@ -42,7 +42,7 @@ list of modes supported
 
 ### Go
 
-Used go-mode in .go files
+Used 'go-mode` in `.go` files
 
 #### Requirements
 
