@@ -36,6 +36,12 @@ C-c y   -> paste from clipboard
 C-c C-w -> kill to clipboard
 ```
 
+buffer change
+```
+C-x j -> next-buffer
+C-x p -> previous-buffer
+```
+
 ## Modes
 
 list of modes supported
