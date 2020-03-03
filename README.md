@@ -48,15 +48,24 @@ list of modes supported
 
 ### Go
 
-Used 'go-mode` in `.go` files
+Used:
+- [go-mode](https://github.com/vibhavp/go-complete)
+- [go-complete](https://github.com/vibhavp/go-complete)
 
 #### Requirements
 
 - [godef](github.com/rogpeppe/godef)
 - [goimports](golang.org/x/tools/cmd/goimports)
+- [gocode](github.com/mdempsky/gocode)
 
 #### Changed Keys
 ```
 M-.   -> godef-jump
 C-c d -> godoc-at-point
+M-C i -> go-complete-at-point
 ```
+
+### Elixir
+
+Used:
+- [elixir-mode](https://github.com/elixir-editors/emacs-elixir)
