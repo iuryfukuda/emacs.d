@@ -61,7 +61,9 @@
 
 	;; use-package
 	"theme"
+
 	"go"
+	"elixir"
 	))
 
 ;; load all libraries
