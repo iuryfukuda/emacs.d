@@ -62,7 +62,7 @@ Used:
 ```
 M-.   -> godef-jump
 C-c d -> godoc-at-point
-M-C i -> go-complete-at-point
+C-M-i -> go-complete-at-point
 ```
 
 ### Elixir
