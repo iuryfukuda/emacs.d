@@ -64,6 +64,8 @@
 
 	"go"
 	"elixir"
+
+	"markdown"
 	))
 
 ;; load all libraries
