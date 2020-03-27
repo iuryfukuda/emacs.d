@@ -2,9 +2,13 @@
   :ensure t
   )
 
+(use-package go-rename
+  :ensure t
+  )
+
 (use-package go-mode
   :ensure t
-  :requires go-complete
+  :requires (go-complete go-rename)
   :config
   (defun go-mode-setup ()
     (add-hook 'before-save-hook 'gofmt-before-save)
