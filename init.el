@@ -7,7 +7,7 @@
 ;; disable startup screen
 (setq inhibit-startup-screen t)
 
-;; graphic configs for X
+
 (defun graphic-config (&optional frame)
   (or frame (setq frame (selected-frame)))
   (with-selected-frame frame
@@ -66,6 +66,7 @@
 	"elixir"
 
 	"markdown"
+	"yaml"
 	))
 
 ;; load all libraries
