@@ -49,29 +49,13 @@
 
 ;;; Libraries
 
-;; Load libraries configs
-(add-to-list 'load-path "~/.emacs.d/init.d")
+;; expand name of all libraries
+(setq lib-directory (expand-file-name "init.d" user-emacs-directory))
+(setq libs (directory-files lib-directory nil "[a-z]+.el"))
 
-;; set libraries
-(setq libs
-      '(
-	;; system changes
-	"keys"
-	"clipboard"
-
-	;; use-package
-	"theme"
-
-	"go"
-	"elixir"
-
-	"markdown"
-	"yaml"
-	))
-
-;; load all libraries
+;; load all libs
 (dolist (lib libs)
-  (load-library lib))
+  (load-file (expand-file-name lib lib-directory)))
 
 ;;; Emacs Custom Config
 
