@@ -54,9 +54,9 @@ Used:
 
 #### Requirements
 
-- [godef](github.com/rogpeppe/godef)
-- [goimports](golang.org/x/tools/cmd/goimports)
-- [gocode](github.com/mdempsky/gocode)
+- [godef](https://github.com/rogpeppe/godef)
+- [goimports](https://golang.org/x/tools/cmd/goimports)
+- [gocode](https://github.com/mdempsky/gocode)
 
 #### Changed Keys
 ```
