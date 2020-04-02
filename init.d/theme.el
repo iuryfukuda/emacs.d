@@ -1,4 +1,4 @@
-(use-package dracula-theme
+(use-package ample-theme
   :ensure t
   :config
-  (load-theme 'dracula t))
+  (load-theme 'ample-flat t))
