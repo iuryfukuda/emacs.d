@@ -51,7 +51,7 @@
 
 ;; expand name of all libraries
 (setq lib-directory (expand-file-name "init.d" user-emacs-directory))
-(setq libs (directory-files lib-directory nil "[a-z]+.el"))
+(setq libs (directory-files lib-directory nil "^[a-z]+.el$"))
 
 ;; load all libs
 (dolist (lib libs)
