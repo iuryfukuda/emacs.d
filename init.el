@@ -1,4 +1,4 @@
-;;; Global configs
+;;; Global initial configs
 
 (menu-bar-mode -1) ; remove menu bar
 ;; (global-font-lock-mode 0) ; remove color
@@ -53,7 +53,7 @@
 (setq lib-directory (expand-file-name "init.d" user-emacs-directory))
 (setq libs (directory-files lib-directory nil "^[a-z-]+.el$"))
 
-;; load all libs
+;; load all libraries
 (dolist (lib libs)
   (load-file (expand-file-name lib lib-directory)))
 
