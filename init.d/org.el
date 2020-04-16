@@ -1,2 +1,2 @@
-(use-package "org"
+(use-package org
   :ensure t)

@@ -1,10 +1,8 @@
 (use-package go-complete
-  :ensure t
-  )
+  :ensure t)
 
 (use-package go-rename
-  :ensure t
-  )
+  :ensure t)
 
 (use-package go-mode
   :ensure t
