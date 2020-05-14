@@ -1,4 +1,4 @@
-(use-package ample-theme
+(use-package parchment-theme
   :ensure t
   :config
-  (load-theme 'ample-flat t))
+  (load-theme 'parchment t))

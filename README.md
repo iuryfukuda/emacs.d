@@ -4,7 +4,7 @@ Emacs.d saves the customization of emacs
 
 ## Theme
 
-- [Dracula](https://draculatheme.com/emacs/)
+- [Parchment](https://github.com/ajgrf/parchment)
 
 ## Changed Keys
 
