@@ -60,6 +60,8 @@
 (dolist (lib libs)
   (load-file (expand-file-name lib lib-directory)))
 
+(put 'dired-find-alternate-file 'disabled nil)
+
 ;;; Emacs Custom Config
 
 ;; set emacs custom-configs to separated file
