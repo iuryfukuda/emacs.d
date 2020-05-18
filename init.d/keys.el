@@ -15,6 +15,9 @@
 (global-set-key (kbd "C-c y") 'paste-from-clipboard)
 (global-set-key (kbd "C-c C-w") 'kill-to-clipboard)
 
-;; buffer change
+;; buffer
 (global-set-key (kbd "C-x j") 'next-buffer)
 (global-set-key (kbd "C-x p") 'previous-buffer)
+(global-set-key (kbd "C-x x e") 'eval-buffer)
+(global-set-key (kbd "C-x x r") 'revert-buffer)
+(global-set-key (kbd "C-x x d") 'diff-buffer-with-file)
