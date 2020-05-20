@@ -8,8 +8,9 @@
 ;; disable startup screen
 (setq inhibit-startup-screen t)
 
-;; disable message buffer
+;; disable *Messages* buffer
 (setq message-log-max nil)
+(kill-buffer "*Messages*")
 
 ;; define font
 (set-face-attribute 'default nil :height 150)
