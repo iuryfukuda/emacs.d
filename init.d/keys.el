@@ -15,9 +15,20 @@
 (global-set-key (kbd "C-c y") 'paste-from-clipboard)
 (global-set-key (kbd "C-c C-w") 'kill-to-clipboard)
 
-;; buffer
+;; bindings
 (global-set-key (kbd "C-x j") 'next-buffer)
 (global-set-key (kbd "C-x p") 'previous-buffer)
 (global-set-key (kbd "C-x x e") 'eval-buffer)
 (global-set-key (kbd "C-x x r") 'revert-buffer)
 (global-set-key (kbd "C-x x d") 'diff-buffer-with-file)
+
+;; windows
+(defun close-and-kill-next-pane ()
+  "If there are multiple windows, then close the other pane and kill the buffer in it also."
+  (interactive)
+  (other-window 1)
+  (kill-this-buffer)
+  (if (not (one-window-p))
+      (delete-window)))
+
+(global-set-key (kbd "C-x 4 k") 'close-and-kill-next-pane)
