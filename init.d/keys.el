@@ -38,5 +38,5 @@
   (if (not (one-window-p))
       (delete-window)))
 
-(global-set-key (kbd "C-x 4 1") 'kill-next-buffer-and-close-window)
-(global-set-key (kbd "C-x 4 2") 'close-next-window)
+(global-set-key (kbd "C-x 4 2") 'kill-next-buffer-and-close-window)
+(global-set-key (kbd "C-x 4 1") 'close-next-window)
