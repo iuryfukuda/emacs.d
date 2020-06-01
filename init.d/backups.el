@@ -9,8 +9,17 @@
 (setq vc-make-backup-files t)
 
 ;; define backup location
-(setq backup-directory (expand-file-name "backup" user-emacs-directory))
-(setq backup-directory-session (expand-file-name "session" backup-directory))
+(setq backup-directory (expand-file-name "backup/" user-emacs-directory))
+(setq backup-directory-session (expand-file-name "session/" backup-directory))
+(setq auto-save-directory (expand-file-name "auto-save/" backup-directory))
+
+;; must exist directory to auto-saves
+(when (not (file-directory-p auto-save-directory))
+  (make-directory auto-save-directory))
+
+;; set auto-save directory
+(setq auto-save-file-name-transforms
+      `((".*" ,auto-save-directory t)))
 
 ;; Default and per-save backups go here
 (setq backup-directory-alist `(("" . ,backup-directory)))
