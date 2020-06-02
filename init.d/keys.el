@@ -16,6 +16,13 @@
 (global-set-key (kbd "C-x x r") 'revert-buffer)
 (global-set-key (kbd "C-x x d") 'diff-buffer-with-file)
 
+(global-set-key (kbd "<f5>") 'revert-buffer-no-confirm)
+
+;; revert buffer no-confirm
+(defun revert-buffer-no-confirm ()
+  "Revert buffer without confirmation."
+  (interactive) (revert-buffer t t))
+
 ;; windows
 (defun kill-next-buffer-and-close-window ()
   "If there are multiple windows, then close the other pane and kill the buffer in it also."
