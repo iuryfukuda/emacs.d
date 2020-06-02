@@ -5,6 +5,7 @@
   (:map flyspell-mode-map
         ("C-ç c" . ispell-word)
         ("C-ç r" . flyspell-region)
+        ("C-ç b" . flyspell-buffer)
         ("C-ç e" . flyspell-to-english)
         ("C-ç p" . flyspell-to-portuguese))
   :config
