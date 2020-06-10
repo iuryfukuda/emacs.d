@@ -13,4 +13,5 @@
   (:map magit-status-mode-map
 	("q" . magit-kill-buffers))
   :config
-  (add-hook 'after-save-hook 'magit-after-save-refresh-status t))
+  (add-hook 'after-save-hook 'magit-after-save-refresh-status t)
+  (setq magit-branch-read-upstream-first 'fallback))
