@@ -1,4 +1,4 @@
-(use-package parchment-theme
+(use-package plan9-theme
   :ensure t
   :config
-  (load-theme 'parchment t))
+  (load-theme 'plan9 t))
