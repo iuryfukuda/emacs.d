@@ -12,7 +12,10 @@
   :config
   (setq org-latex-packages-alist '(("margin=2cm" "geometry" nil)))
   (require 'ox-md)
-  (setq org-export-backends '(org ascii html icalendar latex md odt)))
+  (setq org-export-backends'(org ascii html icalendar latex md odt))
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((shell . t))))
 
 
 ;; Correct text
@@ -34,8 +37,3 @@
   (defun flyspell-to-english()
     (interactive)
     (ispell-change-dictionary "en_US")))
-
-
-
-
-
