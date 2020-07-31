@@ -72,3 +72,14 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load custom-file))
+
+;; custom default tab size
+(defun my-generate-tab-stops (&optional width max)
+  "Return a sequence suitable for `tab-stop-list'."
+  (let* ((max-column (or max 200))
+         (tab-width (or width tab-width))
+         (count (/ max-column tab-width)))
+    (number-sequence tab-width (* tab-width count) tab-width)))
+
+(setq tab-width 2)
+(setq tab-stop-list (my-generate-tab-stops))
