@@ -17,23 +17,3 @@
    'org-babel-load-languages
    '((shell . t))))
 
-
-;; Correct text
-(use-package flyspell
-  :ensure t
-  :bind
-  ("C-ç f" . flyspell-mode)
-  (:map flyspell-mode-map
-        ("C-ç c" . ispell-word)
-        ("C-ç r" . flyspell-region)
-        ("C-ç b" . flyspell-buffer)
-        ("C-ç e" . flyspell-to-english)
-        ("C-ç p" . flyspell-to-portuguese))
-  :config
-  (setq ispell-program-name "hunspell")
-  (defun flyspell-to-portuguese()
-    (interactive)
-    (ispell-change-dictionary "pt_BR"))
-  (defun flyspell-to-english()
-    (interactive)
-    (ispell-change-dictionary "en_US")))
