@@ -73,7 +73,7 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
-;; custom default tab size
+;; custom default tab width
 (defun my-generate-tab-stops (&optional width max)
   "Return a sequence suitable for `tab-stop-list'."
   (let* ((max-column (or max 200))
