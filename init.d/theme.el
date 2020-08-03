@@ -1,4 +1,4 @@
-(use-package plan9-theme
+(use-package acme-theme
   :ensure t
   :config
-  (load-theme 'plan9 t))
+  (load-theme 'acme t))
