@@ -1,14 +1,14 @@
 ;; Intialize orgmode
 (use-package org
   :ensure t
-  :requires (ox-gfm ox-md)
+  :after (ox-gfm ox-md)
   :config
   (setq
    org-startup-indented t
-   org-catch-invisible-edits 'show
+   org-catch-invisible-edits 'error
    org-cycle-separator-lines -1
    calendar-week-start-day 1
-   org-ellipsis "⤵"
+   ;; org-ellipsis "⤵"
    org-use-speed-commands t
    org-refile-targets (quote ((nil :maxlevel . 9)
                               (org-agenda-files :maxlevel . 9)))
@@ -26,4 +26,6 @@
 
 ;; github flavored markdown
 (use-package ox-gfm
-  :ensure t)
+  :ensure t
+  :after flyspell
+  :config)
