@@ -1,4 +1,4 @@
-(use-package acme-theme
+(use-package solarized-theme
   :ensure t
   :config
-  (load-theme 'acme t))
+  (load-theme 'solarized-light t))
