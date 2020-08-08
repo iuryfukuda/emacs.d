@@ -1,7 +1,7 @@
 ;; Intialize orgmode
 (use-package org
   :ensure t
-  :after (ox-gfm ox-md)
+  :after (ox-gfm ox-md org-bullets)
   :config
   (setq
    org-startup-indented t
@@ -27,5 +27,10 @@
 ;; github flavored markdown
 (use-package ox-gfm
   :ensure t
-  :after flyspell
-  :config)
+  :after flyspell)
+
+;; org-mode bullet list
+(use-package org-bullets
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
