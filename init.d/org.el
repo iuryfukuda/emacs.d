@@ -15,7 +15,7 @@
    org-src-tab-acts-natively t
    org-src-preserve-indentation t
    org-src-fontify-natively t
-   org-directory (expand-file-name "Org/" user-emacs-directory)
+   org-directory (expand-file-name "Org" user-emacs-directory)
    org-agenda-files (expand-file-name "agenda" org-directory)
    org-support-shift-select t
    org-latex-packages-alist '(("margin=2cm" "geometry" nil)))
