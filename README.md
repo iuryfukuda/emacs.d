@@ -1,3 +1,4 @@
 # Emacs.d
 
-Emacs.d saves personal customization. See all modules in `init.d/*`
+Emacs.d saves personal customization. 
+- Modules in `init.d/`
