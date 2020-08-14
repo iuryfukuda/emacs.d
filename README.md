@@ -2,4 +2,4 @@
 
 Emacs.d saves the customization of emacs
 
-See all modules in `inid.d/*`
+See all modules in `init.d/*`
