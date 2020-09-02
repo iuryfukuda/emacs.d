@@ -1,5 +1,5 @@
 # Emacs.d
 
-Emacs.d saves personal customization.  
+Personal emacs.d.  
 
  - Modules in `./init.d/`
