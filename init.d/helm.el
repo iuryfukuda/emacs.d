@@ -16,4 +16,9 @@
    helm-M-x-fuzzy-match t
    ;; helm-mini => C-x b
    helm-buffers-fuzzy-matching t
-   helm-recentf-fuzzy-match t))
+   helm-recentf-fuzzy-match t)
+
+  ;; helm-ff-do-grep ack-grep
+  (when (executable-find "ack-grep")
+    (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
+          helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f")))
