@@ -6,8 +6,7 @@
   ("C-x b" . helm-mini)
   ("C-x C-f" . helm-find-files)
   (:map helm-map
-
-        ("C-h" . delete-backwarid-char))
+        ("C-h" . delete-backward-char))
   :config
   (helm-mode 1)
   (helm-autoresize-mode t)
