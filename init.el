@@ -5,12 +5,9 @@
 ;; (global-font-lock-mode 0) ; remove color
 ;; (global-linum-mode 1) ; add line numbers
 
+
 ;; disable startup screen
 (setq inhibit-startup-screen t)
-
-;; disable *Messages* buffer
-(setq message-log-max nil)
-(kill-buffer "*Messages*")
 
 ;; define font
 (set-face-attribute 'default nil :height 150)
