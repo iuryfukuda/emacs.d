@@ -1,6 +1,8 @@
 (use-package dired-sidebar
   :bind
   ("C-x C-n" . dired-sidebar-toggle-sidebar)
+  (:map dired-sidebar-mode-map
+        ("C-s" . dired-isearch-filenames-regexp))
   :ensure t
   :commands (dired-sidebar-toggle-sidebar)
   :init
