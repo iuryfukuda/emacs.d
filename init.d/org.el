@@ -22,7 +22,8 @@
   (setq org-export-backends'(org ascii html icalendar latex md odt))
   (org-babel-do-load-languages
    'org-babel-load-languages
-   '((shell . t))))
+   '((shell . t)))
+  (require 'org-tempo))
 
 ;; github flavored markdown
 (use-package ox-gfm
