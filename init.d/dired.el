@@ -19,8 +19,9 @@
   (setq dired-sidebar-use-term-integration t)
   (setq dired-sidebar-use-custom-font t))
 
-(use-package all-the-icons
- :ensure t)
 (use-package vscode-icon
   :ensure t
   :commands (vscode-icon-for-file))
+
+
+
