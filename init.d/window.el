@@ -6,24 +6,23 @@
 (use-package windmove
   :ensure t
   :bind
-  ("M-o b" . windmove-left)
-  ("M-o f" . windmove-right)
-  ("M-o p" . windmove-up)
-  ("M-o n" . windmove-down)
-  ("M-o M-b" . windmove-left)
-  ("M-o M-f" . windmove-right)
-  ("M-o M-p" . windmove-up)
-  ("M-o M-n" . windmove-down)
-  ("M-o C-b" . windmove-left)
-  ("M-o C-f" . windmove-right)
-  ("M-o C-p" . windmove-up)
-  ("M-o C-n" . windmove-down))
+  ("M-O b" . windmove-left)
+  ("M-O f" . windmove-right)
+  ("M-O p" . windmove-up)
+  ("M-O n" . windmove-down)
+  ("M-O M-b" . windmove-left)
+  ("M-O M-f" . windmove-right)
+  ("M-O M-p" . windmove-up)
+  ("M-O M-n" . windmove-down)
+  ("M-O C-b" . windmove-left)
+  ("M-O C-f" . windmove-right)
+  ("M-O C-p" . windmove-up)
+  ("M-O C-n" . windmove-down))
 
 (use-package ace-window
   :ensure t
-  :requires (transpose-frame)
   :bind
-  ("M-o a" . ace-window)
+  ("M-o" . ace-window)
   :config
   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
   (setq aw-background nil))
