@@ -4,6 +4,7 @@
 (setq column-number-mode t) ; add col number
 ;; (global-font-lock-mode 0) ; remove color
 ;; (global-linum-mode 1) ; add line numbers
+(electric-pair-mode) ; auto pair
 
 
 ;; disable startup screen
