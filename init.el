@@ -81,3 +81,10 @@
 
 (setq tab-width 2)
 (setq tab-stop-list (my-generate-tab-stops))
+
+;; base64 encode without break lines
+(defun base64-encode-region-prefix-arg (&rest _args)
+  "Pass prefix arg as third arg to `base64-encode-region'."
+  (interactive "r\nP"))
+
+(advice-add 'base64-encode-region :before #'base64-encode-region-prefix-arg)
