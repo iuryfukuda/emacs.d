@@ -1,6 +1,6 @@
 ;;; Global initial configs
 
-;; (menu-bar-mode t) ; remove menu bar
+(menu-bar-mode 0) ; remove menu bar
 (setq column-number-mode t) ; add col number
 ;; (global-font-lock-mode 0) ; remove color
 ;; (global-linum-mode 1) ; add line numbers
