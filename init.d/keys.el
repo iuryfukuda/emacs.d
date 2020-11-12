@@ -1,4 +1,8 @@
-;; changes in default keys
+;;; keys.el -- keys changes
+;;; Commentary:
+;;; Some changes on default Emacs keys
+;;; Code:
+;;;
 (global-set-key (kbd "<f1>") 'help-command)
 (global-set-key (kbd "M-p") 'mark-paragraph)
 (global-set-key (kbd "C-h") 'delete-backward-char)
@@ -15,6 +19,13 @@
 (global-set-key (kbd "C-x x e") 'eval-buffer)
 (global-set-key (kbd "C-x x r") 'revert-buffer)
 (global-set-key (kbd "C-x x d") 'diff-buffer-with-file)
+
+;; frame
+(global-set-key (kbd "C-x w") 'transpose-frame)
+
+;; Add keys to scroll page by line
+(global-set-key (kbd "M-[") 'scroll-up-line)
+(global-set-key (kbd "M-]") 'scroll-down-line)
 
 (global-set-key (kbd "<f5>") 'revert-buffer-no-confirm)
 
@@ -41,3 +52,4 @@
 
 (global-set-key (kbd "C-x 4 2") 'kill-next-buffer-and-close-window)
 (global-set-key (kbd "C-x 4 1") 'close-next-window)
+
