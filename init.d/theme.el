@@ -1,4 +1,4 @@
-(use-package solarized-theme
+(use-package material-theme
   :ensure t
   :config
-  (load-theme 'solarized-light t))
+  (load-theme 'material-light t))

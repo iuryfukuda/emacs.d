@@ -7,6 +7,7 @@
 (global-set-key (kbd "M-p") 'mark-paragraph)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "M-h") 'backward-kill-word)
+(global-set-key (kbd "M-<S-N>") 'kill-whole-line)
 
 ;; set copy to X clipboard (when -nw is used)
 (global-set-key (kbd "C-c w") 'copy-to-clipboard)
@@ -53,3 +54,25 @@
 (global-set-key (kbd "C-x 4 2") 'kill-next-buffer-and-close-window)
 (global-set-key (kbd "C-x 4 1") 'close-next-window)
 
+
+(defun split-window-func-with-other-buffer (split-function)
+  (lexical-let ((s-f split-function))
+    (lambda ()
+      (interactive)
+      (funcall s-f)
+      (set-window-buffer (next-window) (other-buffer)))))
+
+(defun split-window-horizontally-instead ()
+  (interactive)
+  (save-excursion
+    (delete-other-windows)
+    (funcall (split-window-func-with-other-buffer 'split-window-horizontally))))
+
+(defun split-window-vertically-instead ()
+  (interactive)
+  (save-excursion
+    (delete-other-windows)
+    (funcall (split-window-func-with-other-buffer 'split-window-vertically))))
+
+(global-set-key "\C-x|" 'split-window-horizontally-instead)
+(global-set-key "\C-x_" 'split-window-vertically-instead)

@@ -6,6 +6,9 @@
 ;; (global-linum-mode 1) ; add line numbers
 (electric-pair-mode) ; auto pair
 
+;; set split window verticaly by default
+(setq split-width-threshold 0)
+(setq split-height-threshold nil)
 
 ;; disable startup screen
 (setq inhibit-startup-screen t)
@@ -56,7 +59,7 @@
 
 ;; expand name of all libraries
 (setq lib-directory (expand-file-name "init.d" user-emacs-directory))
-(setq libs (directory-files lib-directory nil "^[a-z-]+.el$"))
+(setq libs (directory-files lib-directory nil "^[a-z-1-9]+.el$"))
 
 ;; load all libraries
 (dolist (lib libs)
