@@ -9,7 +9,7 @@
   :ensure t
   :bind
   ("C-M-g" . magit-dispatch)
-  ("C-X g" . magit-status)
+  ("C-x g" . magit-status)
   (:map magit-status-mode-map
 	("q" . magit-kill-buffers))
   :config
