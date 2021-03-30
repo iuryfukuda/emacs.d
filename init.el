@@ -14,7 +14,7 @@
 (setq inhibit-startup-screen t)
 
 ;; define font
-(set-face-attribute 'default nil :height 150)
+(set-face-attribute 'default nil :height 100)
 
 (defun graphic-config (&optional frame)
   (or frame (setq frame (selected-frame)))
