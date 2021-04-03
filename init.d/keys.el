@@ -76,3 +76,7 @@
 
 (global-set-key "\C-x|" 'split-window-horizontally-instead)
 (global-set-key "\C-x_" 'split-window-vertically-instead)
+
+(use-package avy
+  :ensure t
+  :bind ("C-;" . avy-goto-char-timer))
